@@ -20,6 +20,7 @@ function App() {
   }, []);
 
   let toAmount = (amount * exchangeRate).toFixed(1);
+
   function onChangeAmount(e) {
     setAmount(e.target.value);
   }
