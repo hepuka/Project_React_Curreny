@@ -31,17 +31,16 @@ function App() {
     <>
       <h1>{`${dates}`}</h1>
 
-      <h3>Aktuális árfolyam: {exchangeRate}</h3>
+      <h3>Aktuális árfolyam: {exchangeRate} HUF</h3>
 
-      {/* onChangeAmount-ot átadom a komponensnek, az fogadja, majd beállítja a komponensben az amount-ot, majd visszaadja, és a itt fogadja az App.js amount-ot */}
       <div className="hufinput">
         <p>EUR</p>
+
         <CurrencyRow onChangeAmount={onChangeAmount} amount={amount} />
       </div>
 
       <div>
-        <p>HUF</p>
-        <CurrencyRow amount={toAmount} />
+        <p>{toAmount} HUF</p>
       </div>
     </>
   );
