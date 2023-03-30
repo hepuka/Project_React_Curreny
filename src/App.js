@@ -31,7 +31,7 @@ function App() {
     <>
       <h1>{`${dates}`}</h1>
 
-      <h3>Aktuális árfolyam: {exchangeRate} HUF</h3>
+      <h3>Aktuális árfolyam: {exchangeRate}</h3>
 
       <div className="hufinput">
         <p>EUR</p>
